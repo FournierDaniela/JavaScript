@@ -1,33 +1,30 @@
+const paciente1= "lautaro"
+const paciente2= "martina"
+const paciente3= "lisandro"
 
-  const paciente1= "lautaro"
-  const paciente2= "martina"
-  const paciente3= "lisandro"
+const usuario= prompt("Ingresa tu nombre de usuario");
 
-  let usuario= prompt("Ingresa tu numero de usuario")
-  
-  if (usuario === paciente1|| usuario === paciente2|| usuario === paciente3){
-    console.log(`Bienvenidx ${usuario}, gracias por confiar en nuestro servicio!`)
+switch(usuario){
+        case paciente1:
+                alert(`hola ${usuario} bienvenidx a Nutrimaster, tu profesional asignado es Messi.`)
+                let dia= prompt("escoja la fecha")
+                let hora= prompt ("indique el horario solicitado")
+                alert(`${usuario} su turno es el dia ${dia} a las ${hora}hs`)
+                break
+        case paciente2:
+               alert(`hola ${usuario} bienvenidx a Nutrimaster, tu profesional asignado es Montiel.`)
+               let dia1= prompt("escoja la fecha")
+               let hora1= prompt ("indique el horario solicitado")
+               alert(`${usuario} su turno es el dia ${dia1} a las ${hora1}hs`)
+               break 
+        case paciente3:
+               alert(`hola ${usuario} bienvenidx a Nutrimaster, tu profesional asignado es Aimar.`)
+               let dia2= prompt("escoja la fecha")
+               let hora2= prompt ("indique el horario solicitado")
+               alert(`${usuario} su turno es el dia ${dia2} a las ${hora2}hs`)
+               break       
+        default:
+                alert(`${usuario}, usted no esta registradx en nuestra institucion.`);
+                break
 
-    let profesional= prompt("Ingrese el nombre de su medico")
-    if (profesional == "fournier"){
-      console.log(`${usuario}, usted sera llamado por el consultorio 5 con el dr ${profesional}`);
-    }else if (profesional == "aimar"){
-      console.log(`${usuario}, usted sera llamado por el consultorio 3 con el dr ${profesional}`);
-    }else if (profesional == "messi"){
-      console.log(`${usuario}, usted sera llamado por el consultorio 1 con el dr ${profesional}`);
-    }else{
-      console.log(`${usuario}, el profesional ingresado no ejerce en Nutrimaster`)
-    }
-
-  }else{
-    console.log(`Hola ${usuario}, usted no esta registrado en nuestro sitio`)
-  }
-  
-  //calcular imc
-  let peso = parseFloat(prompt("Ingrese su peso en Kilogramos"));
-  let estatura = parseFloat(prompt("Ingrese su estatura en metro"));
-  let resultado = peso/estatura
-  //consola
-  console.log (resultado);
-  //alert
-  alert (`Tu indice de masa corporal es ${resultado} !`);
+}
