@@ -1,0 +1,58 @@
+.redes-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #cce3dd;
+    font-family: "Josefin Slab", serif;
+  }
+  .redes-conteiner .redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: #cce3dd;
+    font-family: "Josefin Slab", serif;
+  }
+  .redes-conteiner .instagram, .twitter {
+    margin-left: 60px;
+  }
+  .paragraph{
+      color: #017f97;
+  }
+  .presentacion{
+	margin: 40px;
+	display: inline-block;
+ }
+  .sectionOne{
+    display: inline-block;
+    background-color: #d2d8d8;
+	width: 275px;
+	height: 400px;
+    margin: 30px 45px;
+	padding: 40px;
+ }
+ .sectionTwo{
+    display: inline-block;
+    background-color: #bae1e0;
+	width: 275px;
+	height: 400px;
+    margin: 30px 45px;
+	padding: 40px;
+ }
+ .sectionThree{
+    display: inline-block;
+    background-color: #cce3dd;
+	width: 275px;
+	height: 400px;
+    margin: 30px 45px;
+	padding: 40px;
+ }
+ .styleParagraph {
+    text-align: center;
+    color: #ffffff;
+ }
+ h2{
+     color: #ffffff;
+     text-align: center;
+ }
